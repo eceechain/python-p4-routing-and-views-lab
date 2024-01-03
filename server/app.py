@@ -19,7 +19,7 @@ def count(param):
     numbers = '\n'.join(str(i) for i in range(param + 1))
     return f'<pre>{numbers}</pre>'
 
-@app.route('/math/<float:num1>/<operation>/<float:num2>')
+@app.route('/math/<float:num1><operation><float:num2>')
 def math(num1, operation, num2):
     result = None
 
